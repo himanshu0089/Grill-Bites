@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useCart } from "./cart-context";
-// import CartItems from "./cartItems"; 
-import CartIcon from "./CartIcon";
+import { useCart } from "./cart-context"; 
 
 function Navbar({showCart,setShowCart, itemCounter }) {
   return (
