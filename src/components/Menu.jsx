@@ -2,7 +2,7 @@ import React, { useReducer, useRef } from "react";
 import { useState } from "react";
 import Navbar from "./Navbar";
 import { useCart } from "./cart-context";
-import Container from "./Container";
+
 import { menuList } from "./menuList";
 
 function Menu({ setItemCounter }) {
@@ -15,8 +15,8 @@ function Menu({ setItemCounter }) {
     addToCart(id);
   };
   return (
-    <div className="bg-gray-500 flex flex-col">
-      <Container />
+    <div className="bg-white flex flex-col">
+      
 
       {menuList.map((item, id) => {
         return (

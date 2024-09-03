@@ -3,9 +3,9 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Menu from "./components/Menu";
-import Footer from "./components/Footer";
-import CartItems from "./components/cartItems"; 
+import Footer from "./components/Footer"; 
+import Home from "./components/Home";
+import CartItems from "./components/cartItems";
 
 function App() {
   const [showCart, setShowCart] = useState(true); 
@@ -13,11 +13,10 @@ function App() {
 
   return (
     <>
+       {showCart && <CartItems setShowCart={setShowCart} setItemCounter={setItemCounter} />}
       <div>
         <Navbar showCart={showCart} setShowCart={setShowCart} itemCounter={itemCounter} />
-        {showCart && <CartItems setShowCart={setShowCart} setItemCounter={setItemCounter} />} 
-        <Menu setItemCounter={setItemCounter}/>
-
+        <Home showCart={showCart} setShowCart={setShowCart} setItemCounter={setItemCounter}/>
         <Footer />
       </div>
     </>

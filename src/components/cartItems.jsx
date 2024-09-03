@@ -16,9 +16,9 @@ function CartItems({ setShowCart , setItemCounter}) {
     console.log({ menuList });
   }, []);
   return (
-    <div className="">
-      <div className="bg-gray-400">
-        <div className="">
+    <div className="bg-gray-200 z-1 absolute w-full opacity-95">
+      <div className=" ">
+        <div className="place-self-center	">
           {menuList.map((item, index) => {
             if (itemRef[item.id] > 0) {
               return (

@@ -4,7 +4,7 @@ import { useCart } from "./cart-context";
 
 function Navbar({showCart,setShowCart, itemCounter }) {
   return (
-    <div className="bg-lime-200 flex justify-between h-[70px] z-10 fixed w-screen">
+    <div className="bg-lime-200 flex justify-between w-screen">
       <div className="mx-20 my-5 font-bold">
         {" "}
         <h2>Laziz Food</h2>
