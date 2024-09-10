@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -20,7 +21,7 @@ function Footer() {
         <hr className=" bg-gray-400 h-[2px] w-11/12 border-0 mx-[2rem]" />
         <div className="text-white text-center my-4">
           <p>Copyright @ All rights Reversed</p>
-          <h2 className="text-green-400">Designed by Pir@te</h2>
+         <Link to="https://himanshu0089.netlify.app"><h2 className="text-green-400">Designed by Pir@te</h2></Link> 
         </div>
       
     </div>

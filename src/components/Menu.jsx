@@ -6,9 +6,10 @@ import { useCart } from "./cart-context";
 import { menuList } from "./menuList";
 
 function Menu({ setItemCounter }) {
+  const[val, setVal]=useState(1)
   const { addToCart, RemoveFromCart } = useCart();
   const setValue = (e) => {
-    console.log(modifier);
+    setVal(e.target.value)
   };
   const handleCart = (id) => {
     setItemCounter((prev) => prev + 1);
@@ -32,10 +33,11 @@ function Menu({ setItemCounter }) {
                   <label>
                     Amount
                     <input
-                      className="mx-3"
+                     className="mx-3 border-2 border-grey-500 text-black my-1"
                       type="number"
+                      value={val}
                       min="1"
-                      max="5"
+                      max="1"
                       step="1"
                       onChange={setValue}
                     />
@@ -43,7 +45,7 @@ function Menu({ setItemCounter }) {
                 </div>
                 <div className="">
                   <button
-                    className="bg-lime-200 rounded-3xl m-2 px-5 py-2"
+                    className="bg-lime-300 rounded-3xl m-2 px-9 py-2"
                     onClick={() => handleCart(item.id)}
                   >
                     {" "}

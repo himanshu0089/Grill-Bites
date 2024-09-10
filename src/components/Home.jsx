@@ -8,7 +8,7 @@ function Home({showCart, setShowCart, setItemCounter}) {
   return (
     <div className=''>
         <Container />
-        {showCart && <CartItems setShowCart={setShowCart} setItemCounter={setItemCounter} />} 
+        {/* {showCart && <CartItems setShowCart={setShowCart} setItemCounter={setItemCounter} />}  */}
         <Menu setItemCounter={setItemCounter}/> 
         
     </div>

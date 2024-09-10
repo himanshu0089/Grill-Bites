@@ -1,13 +1,11 @@
 import React from "react";
-// import food from "../assets/Food" 
 function Container() {
 
   return (
-    <>
-    <img className="w-[80vw] h-[34vw] m-auto" src="food.jpg" alt="" />
-    <div className="bg-gray-300 text-green-600 text-center mx-20 my-5 py-5">
+    <div className="mb-6 bg-black">
+    <img className="w-[84vw] h-[30vw] m-auto" src="food.jpg" alt="" />
+    <div className="bg-gray-300 text-green-600 text-center mx-[6rem] py-5 rounded-sm">
       {" "}
-      {/* <img src="food.jpg" alt="" />  */}
       <h2 className="font-bold"> Delicious Food, Delivered To You </h2>
       <p>
         Choose your favorite meal from our broad selection of available meals
@@ -18,7 +16,7 @@ function Container() {
         of course by experienced chefs!
       </p>
     </div>
-    </>
+    </div>
   );
 }
 
